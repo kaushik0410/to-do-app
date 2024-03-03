@@ -1,0 +1,3 @@
+<h2 class="font-bold">Completed Task</h2>
+<app-page-title></app-page-title>
+<app-tasklist [taskList]="taskList" (completed)="onComplete($event)" (delete)="onDelete($event)"></app-tasklist>

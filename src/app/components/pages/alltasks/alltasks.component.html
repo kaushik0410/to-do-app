@@ -1,0 +1,6 @@
+<h2 class="font-bold">My Daily Schedule</h2>
+<app-page-title search="search($event)"></app-page-title>
+<div class="flex mt-5">
+  <input class="w-full h-12 p-5 rounded shadow" type="text" placeholder="Enter Task" [(ngModel)]="newTask" (keydown.enter)="addTask()"/>
+</div>
+<app-tasklist [taskList]="taskList" (complete)="onComplete($event)" (important)="onImportant($event)" (delete)="onDelete($event)"></app-tasklist>
